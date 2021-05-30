@@ -126,7 +126,7 @@
 
 
 
-    $('.isotope').each(function() {		
+    $('.isotope').each(function() {	
 		var $container = $(this);
 		$container.imagesLoaded( function(){
 			$container.isotope({		 
@@ -137,6 +137,20 @@
 				  columnWidth: '.isotope-item'
 				}	
 			});	
+		});
+    }); 
+
+	$('.isotopev2').each(function() {	
+		var $container = $(this);
+		$container.imagesLoaded( function(){
+			// $container.isotope({		 
+			// 	itemSelector: '.isotope-item',
+			// 	percentPosition: true,
+			// 	layoutMode: 'masonry',	
+			// 	masonry: {
+			// 	  columnWidth: '.isotope-item'
+			// 	}	
+			// });	
 		});
     }); 
 

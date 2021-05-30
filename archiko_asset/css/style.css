@@ -1283,7 +1283,8 @@ i.icon{
 
 
 
-.isotope .isotope-item{
+.isotope .isotope-item,
+.isotopev2 .isotope-item{
   width: 100%;
 }
 
@@ -2112,15 +2113,18 @@ img.mfp-img{
 
 
 
-  .isotope .isotope-item{
+  .isotope .isotope-item,
+  .isotopev2 .isotope-item{
     width: 50%;
   }
 
-  .isotope .isotope-item.w66{
+  .isotope .isotope-item.w66,
+  .isotopev2 .isotope-item.w66{
     width: 100%;
   }
 
-  .isotope .isotope-item.w100{
+  .isotope .isotope-item.w100,
+  .isotopev2 .isotope-item.w100{
     width: 100%;
   }
 
@@ -2183,11 +2187,13 @@ img.mfp-img{
 
 
 
-  .isotope .isotope-item{
+  .isotope .isotope-item,
+  .isotopev2 .isotope-item{
     width: 33.33333333%;
   }
 
-  .isotope .isotope-item.w66{
+  .isotope .isotope-item.w66,
+  .isotopev2 .isotope-item.w66{
     width:66.66666%;
   }
 
