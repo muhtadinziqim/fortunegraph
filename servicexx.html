@@ -188,7 +188,7 @@
             <!-- end video-bg -->
             <div class="inner">
                 <div class="container">
-                    <h1>MUSIC <br> PRODUCTION</h1>
+                    <h1>WORK</h1>
                 </div>
                 <!-- end container -->
             </div>
@@ -297,6 +297,16 @@
         <section>
             <div class="vlt-gap-90"></div>
             <div class="container-fluid p-0">
+                <div class="text-center">
+                    <ul class="vlt-isotope-filters" id="vlt-filter-portfolio-10">
+                        <li class="active all" data-filter="*"><span>ALL</span></li>
+                        <li data-filter=".filter-guide" class="branding"><span>BRANDING</span></li>
+                        <li data-filter=".filter-identity" class="branded-video"><span> BRANDED VIDEO </span></li>
+                        <li data-filter=".filter-motion" class="music-production"><span>AUDIO PRODUCTIN</span></li>
+                        <li data-filter=".filter-packaging" class="branded-photo"><span>BRANDED PHOTO</span></li>
+                    </ul>
+                </div>
+                <div class="vlt-gap-60"></div>
                 <div class="vlt-isotope-grid" data-columns="3" data-layout="masonry" data-x-gap="0|0" data-y-gap="0|0"
                     data-controls="#vlt-filter-portfolio-10" data-load-more-selector="#vlt-load-more-portfolio-10">
                     <div class="grid-sizer"></div>
@@ -311,7 +321,7 @@
                     </div>
                 </div> -->
             </div>
-            <div class="vlt-gap-140"></div>
+            <div class="vlt-gap-120"></div>
         </section>
 
         <!-- end works -->
@@ -619,7 +629,7 @@
     <script src="./work-music-production.js"></script>
     <script src="./work-branded-photo.js"></script>
     <script>
-        $(".isi-showcase").html(html_music_production)
+        $(".isi-showcase").html(html_all)
         $(window).load(function () {
             tampil_porto();
             // Run code

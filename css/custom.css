@@ -210,3 +210,15 @@ button[type=submit]{
     display: block;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .vlt-project-showcase--style-3 {
+    height: 100vh;
+    min-height: 550px;
+    width: 100vw;
+    margin-left: 50px;
+  }
+  .vlt-project-showcase__item{
+    width: 80vw;
+  }
+}

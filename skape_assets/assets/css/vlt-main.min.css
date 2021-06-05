@@ -612,6 +612,10 @@ dl dd {
     height: 400px
 }
 
+.vlt-gap-140 {
+    height: 140px
+}
+
 @media only screen and (max-width:575px) {
     .vlt-gap-400--xs {
         height: 400px
@@ -4102,7 +4106,8 @@ dl dd {
 
 .vlt-project-showcase--style-3 {
     height: 100vh;
-    min-height: 550px
+    min-height: 550px;
+    width: 100vw;
 }
 
 .vlt-project-showcase--style-3 .swiper-container,

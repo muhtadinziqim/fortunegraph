@@ -1408,7 +1408,7 @@ i.icon{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8em;
-  margin-top: -10px;
+  margin-top: 10px;
   /* margin-left: 10px; */
   line-height: 1.5em;
 }

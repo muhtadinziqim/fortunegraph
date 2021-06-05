@@ -124,6 +124,6 @@ function view_more_branded_video() {
 $(".vlt-isotope-filters").children(".branded-video").on("click", function () {
     $(".isi-showcase").html(html_branded_video)
     $('.vlt-isotope-grid').attr("data-columns", "2")
-    $('.vlt-isotope-grid').attr("data-x-gap", "15|15")
-    $('.vlt-isotope-grid').attr("data-y-gap", "15|15")
+    // $('.vlt-isotope-grid').attr("data-x-gap", "15|15")
+    // $('.vlt-isotope-grid').attr("data-y-gap", "15|15")
 })
