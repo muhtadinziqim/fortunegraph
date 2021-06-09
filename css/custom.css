@@ -154,13 +154,13 @@ button[type=submit]{
 
 
 .act-btn{
-  background:#d4d3d3;
+  background:#012425;
   display: block;
   text-align: center;
   color: #000;
   font-size: 18px;
   font-weight: bold;
-  padding: 2px 20px;
+  padding: 5px 5px;
   border: 1px solid #75dab4;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -173,7 +173,8 @@ button[type=submit]{
 }
 
 .act-btn:hover{
-  background-color: #75dab4;
+  background-color: #012425;
+  border-color: #012425;
   color: #000;
   text-decoration: none;
 }
