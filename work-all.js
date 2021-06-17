@@ -111,12 +111,12 @@ var html_all = `
     </div>
     <div
         style="display: flex; justify-content: center; background-color: #222327; margin-top: 40px; margin-bottom: 40px;">
-        <button onclick="view_more_porto()" class="btn-s btn-4 btn-view-all" style="">View All</button>
+        <button onclick="view_more_porto_all()" class="btn-s btn-4 btn-view-all" style="">View All</button>
     </div>
 </section>
 `;
 
-function tampil_porto() {
+function tampil_porto_all() {
     console.log("window", $(window).width());
     var n_child = $(".isotopev2").children(".visible").length;
     var t1 = $(".tp").height()
@@ -249,20 +249,28 @@ function tampil_porto() {
         $('.vlt-isotope-grid').css({ "height": height + "px" });
         $('.isotopev2').css({ "height": height + "px" });
         console.log("Heiht", height);
-
+    
+    }else if ($(window).width() <= 762){
+        let hs = 0;
+        for (let i = 1; i <= n_child; i++) {
+            hs += $('.isotopev2 .isotope-item:nth-child(' + i + ')').height()
+        }
+        $('.vlt-isotope-grid').css({ "height": hs + "px" });
+        $('.isotopev2').css({ "height": hs + "px" });
+        console.log("Heiht", hs);
     }
-    console.log($(".isotope").children(".satu").html());
 }
 
-function view_more_porto() {
+function view_more_porto_all() {
+    console.log("Okok");
     $(".isotopev2").children(".invisible").removeClass("invisible").addClass("visible")
     $(".btn-view-all").addClass('hidden')
-    tampil_porto();
+    tampil_porto_all();
 }
 
 $(".vlt-isotope-filters").children(".all").on("click", function () {
     $(".isi-showcase").html(html_all)
     setTimeout(() => {
-        tampil_porto();
+        tampil_porto_all();
     }, 100);
 })

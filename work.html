@@ -298,7 +298,7 @@
             <div class="vlt-gap-90"></div>
             <div class="container-fluid p-0">
                 <div class="text-center">
-                    <ul class="vlt-isotope-filters" id="vlt-filter-portfolio-10">
+                    <ul class="vlt-isotope-filters filter-saya-mobile" id="vlt-filter-portfolio-10">
                         <li class="active all" data-filter="*"><span>ALL</span></li>
                         <li data-filter=".filter-guide" class="branding"><span>BRANDING</span></li>
                         <li data-filter=".filter-identity" class="branded-video"><span> BRANDED VIDEO </span></li>
@@ -325,7 +325,7 @@
         </section>
 
         <!-- end works -->
-        <section class="clients">
+        <section class="clients" style="padding: 0px;">
             <div class="">
                 <div class="row">
                     <div class="col-lg-6 wow wow-saya" data-splitting>
@@ -365,7 +365,14 @@
                         </div>
                     </div>
                     <!-- end col-5 -->
-                    <div class="col-lg-6">
+                    <style>
+                        @media screen and (max-width: 600px) {
+                            .trulala{
+                                margin-top: 50px;
+                            }
+                        }
+                    </style>
+                    <div class="col-lg-6 trulala">
                         <div>
                             <img src="images/Index/Form Create.png" alt="">
                         </div>
@@ -611,10 +618,14 @@
     <link rel="stylesheet" href="css/intlTelInput.css">
     <script type="text/javascript" src="js/intlTelInput.js"></script>
     <script>
-        $('#phone').intlTelInput({
-            container: 'body',
-            utilsScript: "https://rawgit.com/Bluefieldscom/intl-tel-input/master/lib/libphonenumber/build/utils.js"
+        
+        $(window).load(function () {
+            $('#phone').intlTelInput({
+                container: 'body',
+                utilsScript: "https://rawgit.com/Bluefieldscom/intl-tel-input/master/lib/libphonenumber/build/utils.js"
+            });
         });
+
     </script>
 
     <style>
@@ -631,7 +642,7 @@
     <script>
         $(".isi-showcase").html(html_all)
         $(window).load(function () {
-            tampil_porto();
+            tampil_porto_all();
             // Run code
         });
     </script>

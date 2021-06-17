@@ -217,9 +217,15 @@ button[type=submit]{
     height: 100vh;
     min-height: 550px;
     width: 100vw;
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
   .vlt-project-showcase__item{
-    width: 80vw;
+    width: 100vw;
+  }
+
+  .filter-saya-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

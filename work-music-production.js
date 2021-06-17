@@ -92,7 +92,7 @@ var html_music_production = `
 function view_more_porto() {
     $(".isi-showcase").children(".hidden").removeClass("hidden")
     $(".btn-view-all").addClass('hidden')
-    tampil_porto();
+    // tampil_porto();
 }
 
 $(".vlt-isotope-filters").children(".music-production").on("click", function () {
